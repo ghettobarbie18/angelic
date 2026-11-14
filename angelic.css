@@ -16,6 +16,8 @@
 }
 
 /* ORIGINAL TEMPLATE IMAGE */
+
+/* ORIGINAL IMAGE - BLACK & WHITE */
 .angelic-image {
     position: absolute;
     inset: 20px;
@@ -36,6 +38,14 @@
         0 calc(100% - 30px),
         0 30px
     );
+
+    filter: grayscale(100%);
+    transition: filter 1.2s ease-in-out;
+}
+
+/* HOVER - FADE INTO COLOR */
+.angelic-image:hover {
+    filter: grayscale(0%);
 }
 
 /* RESPONSIVE DESIGN */
