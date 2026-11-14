@@ -42,6 +42,7 @@
 .angelic-image {
     position: absolute;
     inset: 20px;
+    background-color: transparent;
     background: url("https://raw.githubusercontent.com/ghettobarbie18/angelic/refs/heads/main/heavenly.jpg") center / cover no-repeat;
     z-index: 1;
     clip-path: polygon(0% 15%, 12% 11%, 15% 0%, 85% 0%, 88% 10%, 100% 15%, 100% 85%, 89% 89%, 85% 100%, 15% 100%, 11% 90%, 0% 85%);
