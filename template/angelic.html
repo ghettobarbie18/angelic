@@ -14,6 +14,9 @@
     margin: auto;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
+    
+    background: transparent;
 }
 
 /* TEMPLATE IMAGE */
@@ -23,20 +26,20 @@
     background: url("https://raw.githubusercontent.com/ghettobarbie18/angelic/refs/heads/main/heavenly.jpg") center / cover no-repeat;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE BACKGROUND */
 @media only screen and (max-width: 1200px) {
-
     .angelic-template {
         width: 100%;
         height: 600px;
-        padding: 15px;
-        box-sizing: border-box;
+        background-image: url("https://cdna.artstation.com/p/assets/images/images/007/229/908/large/nina-vels-heavenly-crown.jpg?1504629868");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .angelic-image {
-        background-image: url("https://cdna.artstation.com/p/assets/images/images/007/229/908/large/nina-vels-heavenly-crown.jpg?1504629868");
+        background: none;
     }
-
 }
 </style>
 </head>
