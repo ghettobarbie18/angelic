@@ -1,6 +1,7 @@
 /* MAIN TEMPLATE */
 .angelic-template {
     position: relative;
+    z-index: 0;
     width: 700px;
     height: 600px;
     margin: 40px auto;
@@ -25,6 +26,7 @@
 .angelic-image {
     position: absolute;
     inset: 20px;
+    z-index: 1;
 
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/angelic/refs/heads/main/heavenly.jpg");
     background-position: center;
@@ -65,7 +67,7 @@
 
     object-fit: cover;
     display: block;
-    z-index: 20;
+    z-index: 10 !important;
 
     pointer-events: auto;
 
