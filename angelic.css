@@ -95,15 +95,13 @@
     z-index: 10;
     top: 250px;
     right: 118px;
-
     font-family: "Qwigley", cursive !important;
     font-weight: 400;
     font-style: bold;
     font-size: 40px !important;
     text-transform: uppercase;
-    text-shadow: 4px 6px 8px #F31559;
+    text-shadow: 4px 8px 4px #F31559;
     letter-spacing: -5x;
-
     background: linear-gradient(
         135deg,
         #931A25,
@@ -111,13 +109,28 @@
         #FFCB8E,
         #F5EFEF
     );
-
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
     display: inline-block;
-
     writing-mode: vertical-rl;
     text-orientation: upright;
+}
+
+/* TITLE2 */
+.title2 {
+    position: absolute !important;
+    z-index: 10;
+    top: 250px;
+    right: 108px;
+    font-family: "Arizonia", cursive !important;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 40px !important;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: -3x;
+    color: #931A25;
+    display: inline-block;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
