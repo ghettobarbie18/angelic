@@ -27,17 +27,18 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* INDENTED CORNERS */
-    clip-path: polygon(
-        30px 0,
-        calc(100% - 30px) 0,
-        100% 30px,
-        100% calc(100% - 30px),
-        calc(100% - 30px) 100%,
-        30px 100%,
-        0 calc(100% - 30px),
-        0 30px
-    );
+    /* INDENTED ROUNDED CORNERS */
+clip-path: path(
+    "M 30 0
+     Q 0 0 0 30
+     L 0 570
+     Q 0 600 30 600
+     L 570 600
+     Q 600 600 600 570
+     L 600 30
+     Q 600 0 570 0
+     Z"
+);
 
     filter: grayscale(100%);
     transition: filter 1.2s ease-in-out;
