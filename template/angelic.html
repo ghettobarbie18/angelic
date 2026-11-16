@@ -36,18 +36,29 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* INDENTED ROUNDED CORNERS */
-clip-path: path(
-    "M 30 0
-     Q 0 0 0 30
-     L 0 570
-     Q 0 600 30 600
-     L 570 600
-     Q 600 600 600 570
-     L 600 30
-     Q 600 0 570 0
-     Z"
-);
+    /* ROUNDED INDENTED CORNERS */
+    -webkit-mask-image: radial-gradient(
+        circle 35px at top left,
+        transparent 98%,
+        black 102%
+    ),
+    radial-gradient(
+        circle 35px at top right,
+        transparent 98%,
+        black 102%
+    ),
+    radial-gradient(
+        circle 35px at bottom left,
+        transparent 98%,
+        black 102%
+    ),
+    radial-gradient(
+        circle 35px at bottom right,
+        transparent 98%,
+        black 102%
+    );
+
+    -webkit-mask-composite: source-over;
 
     filter: grayscale(100%);
     transition: filter 1.2s ease-in-out;
