@@ -53,3 +53,33 @@
         background-attachment: fixed;
     }
 }
+
+/* FLOATING IMAGE */
+.floating-image {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    object-fit: cover;
+    z-index: 10;
+    pointer-events: auto;
+    animation: float 8s ease-in-out infinite;
+    transition: filter .4s ease;
+}
+
+.floating-image:floating {
+    filter:
+        drop-shadow(0 0 5px #FF9FC7)
+        drop-shadow(0 0 10px #FFE7F0)
+        drop-shadow(0 0 20px #F4BAA3);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
