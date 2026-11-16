@@ -91,6 +91,10 @@
 
 /* TITLE */
 .title {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    right: 50px;
     font-family: "Qwigley", cursive;
     font-weight: 400;
     font-style: normal;
