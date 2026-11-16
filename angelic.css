@@ -91,14 +91,16 @@
 
 /* TITLE */
 .title {
-    position: absolute;
+    position: absolute !important;
     z-index: 10;
     top: 50px;
     right: 50px;
-    font-family: "Qwigley", cursive;
+
+    font-family: "Qwigley", cursive !important;
     font-weight: 400;
     font-style: normal;
-    font-size: 25x;
+    font-size: 25px !important;
+
     background: linear-gradient(
         135deg,
         #931A25,
@@ -106,10 +108,14 @@
         #FFCB8E,
         #F5EFEF
     );
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
     display: inline-block;
+
     writing-mode: vertical-rl;
     text-orientation: upright;
+    text-transform: none !important;
 }
