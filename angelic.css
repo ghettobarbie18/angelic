@@ -13,6 +13,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' d='M 10,0 H 90 A 10,10 0 0 0 100,10 V 90 A 10,10 0 0 0 90,100 H 10 A 10,10 0 0 0 0,90 V 10 A 10,10 0 0 0 10,0 Z'/%3E%3C/svg%3E");
+
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
 }
 
 /* ORIGINAL TEMPLATE IMAGE */
