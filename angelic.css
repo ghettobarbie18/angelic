@@ -94,7 +94,7 @@
     position: absolute !important;
     z-index: 10;
     top: 280px;
-    right: 120px;
+    right: 118px;
 
     font-family: "Qwigley", cursive !important;
     font-weight: 400;
@@ -102,7 +102,7 @@
     font-size: 40px !important;
     text-transform: uppercase;
     text-shadow: 2px 4px 6px #F31559;
-    letter-spacing: -4px;
+    letter-spacing: -6x;
 
     background: linear-gradient(
         135deg,
