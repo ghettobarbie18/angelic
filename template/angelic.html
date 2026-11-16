@@ -36,27 +36,18 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* ROUNDED INDENTED CORNERS */
-    -webkit-mask-image: radial-gradient(
-        circle 35px at top left,
-        transparent 98%,
-        black 102%
-    ),
-    radial-gradient(
-        circle 35px at top right,
-        transparent 98%,
-        black 102%
-    ),
-    radial-gradient(
-        circle 35px at bottom left,
-        transparent 98%,
-        black 102%
-    ),
-    radial-gradient(
-        circle 35px at bottom right,
-        transparent 98%,
-        black 102%
-    );
+    /* ROUNDED INWARD CORNERS */
+    clip-path: shape(
+    from 35px 0,
+    hline to calc(100% - 35px),
+    curve to 100% 35px with 100% 0,
+    vline to calc(100% - 35px),
+    curve to calc(100% - 35px) 100% with 100% 100%,
+    hline to 35px,
+    curve to 0 calc(100% - 35px) with 0 100%,
+    vline to 35px,
+    curve to 35px 0 with 0 0
+);
 
     -webkit-mask-composite: source-over;
 
