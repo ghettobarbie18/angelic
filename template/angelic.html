@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Angelic Template</title>
 
@@ -99,14 +101,16 @@
 
 /* TITLE */
 .title {
-    position: absolute;
+    position: absolute !important;
     z-index: 10;
     top: 50px;
     right: 50px;
-    font-family: "Qwigley", cursive;
+
+    font-family: "Qwigley", cursive !important;
     font-weight: 400;
     font-style: normal;
-    font-size: 25x;
+    font-size: 25px !important;
+
     background: linear-gradient(
         135deg,
         #931A25,
@@ -114,12 +118,16 @@
         #FFCB8E,
         #F5EFEF
     );
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
     display: inline-block;
+
     writing-mode: vertical-rl;
     text-orientation: upright;
+    text-transform: none !important;
 }
 </style>
 </head>
