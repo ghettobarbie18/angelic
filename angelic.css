@@ -121,14 +121,14 @@
 .title2 {
     position: absolute !important;
     z-index: 10;
-    top: 280px;
-    right: 98px;
+    top: 300px;
+    right: 85px;
     font-family: "Arizonia", cursive !important;
     font-weight: 400;
     font-style: bold;
     font-size: 40px !important;
-    text-shadow: 2px 2px 2px black;
-    letter-spacing: -3x;
+    text-shadow: 2px 2px 2px #E97171;
+    letter-spacing: 2x;
     color: #931A25;
     display: inline-block;
     writing-mode: vertical-rl;
