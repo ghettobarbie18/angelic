@@ -64,30 +64,39 @@
 }
 
 /* FLOATING IMAGE */
-.floating-image {
-    width: 300px;
-    height: 350px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.angelic-image .floating-image {
+    width: 300px !important;
+    height: 350px !important;
+
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+
     object-fit: cover;
+    display: block;
     z-index: 10;
+
     pointer-events: auto;
-    animation: float 8s ease-in-out infinite;
+
+    animation: angelic-float 8s ease-in-out infinite;
+
     transition: filter .4s ease;
 }
 
-.floating-image:floating {
+/* FLOATING IMAGE GLOW ON HOVER */
+.angelic-image .floating-image:hover {
     filter:
         drop-shadow(0 0 5px #FF9FC7)
         drop-shadow(0 0 10px #FFE7F0)
         drop-shadow(0 0 20px #F4BAA3);
 }
 
-@keyframes float {
+/* FLOATING ANIMATION */
+@keyframes angelic-float {
     0%, 100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
@@ -97,8 +106,14 @@
 
 <body>
 <div class="angelic-template">
-    <div class="angelic-image"></div>
-    <img class="floating-iamge" src="https://i.imgur.com/R9UVwHj.png" alt="">
+
+    <div class="angelic-image">
+
+        <img class="floating-image"
+        src="https://i.imgur.com/R9UVwHj.png">
+
+    </div>
+
 </div>
 </body>
 </html>
