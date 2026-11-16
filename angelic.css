@@ -56,8 +56,8 @@
 
 /* FLOATING IMAGE */
 .angelic-image .floating-image {
-    width: 150px !important;
-    height: 200px !important;
+    width: 100px !important;
+    height: 150px !important;
 
     position: absolute !important;
     top: 0 !important;
