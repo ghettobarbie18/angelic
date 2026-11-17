@@ -98,9 +98,9 @@
     font-family: "Qwigley", cursive !important;
     font-weight: 400;
     font-style: bold;
-    font-size: 40px !important;
+    font-size: 70px !important;
     text-transform: uppercase;
-    text-shadow: 4px 8px 4px #F31559;
+    text-shadow: 8x 8px 4px #F31559;
     letter-spacing: -5x;
     background: linear-gradient(
         135deg,
@@ -121,14 +121,14 @@
 .title2 {
     position: absolute !important;
     z-index: 10;
-    top: 300px;
-    right: 85px;
+    top: 290px;
+    right: 78px;
     font-family: "Arizonia", cursive !important;
     font-weight: 400;
     font-style: bold;
     font-size: 40px !important;
-    text-shadow: 2px 2px 2px #E97171;
-    letter-spacing: 2x;
+    text-shadow: 2px 2px 5px #E97171;
+    letter-spacing: 4x;
     color: #931A25;
     display: inline-block;
     writing-mode: vertical-rl;
