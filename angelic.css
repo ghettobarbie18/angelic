@@ -120,7 +120,7 @@
 .angelic-textbox::before {
     content: "";
     position: absolute;
-    top: 100px;
+    top: 95px;
     left: 0;
     width: 2px;
     height: 350px;
@@ -257,9 +257,9 @@
 .falling-roses {
    position: absolute !important;
    z-index: 5;
-   top: 150px !important;
+   top: 120px !important;
    right: 30px !important;
-   width: 150px !important;
-   height: 400px !important;
+   width: 180px !important;
+   height: 450px !important;
    object-fit: cover;
 }
