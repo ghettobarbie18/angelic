@@ -252,3 +252,14 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
+
+/* ROSES GIF */
+.falling-roses {
+   position: absolute !important;
+   z-index: 5;
+   top: 200px !important;
+   right: 30px !important;
+   width: 200px !important;
+   height: 400px !important;
+   object-fit: cover;
+}
