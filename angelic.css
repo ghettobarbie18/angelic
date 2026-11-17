@@ -264,3 +264,20 @@
    object-fit: cover;
    animation-duration: 15s !important;
 }
+
+/* SPEECH */
+.speech-text {
+   font-family: "Satisfy", cursive;
+   font-weight: 400;
+   font-style: normal;
+   background: linear-gradient(
+        135deg,
+        #E74646,
+        #FA9884
+        #FFE5CA
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   text-shadow: 1px 1px 1px #E97171;
+}
