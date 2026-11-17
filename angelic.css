@@ -253,7 +253,7 @@
     transform: rotate(180deg);
 }
 
-/* ROSES GIF */
+/* ROSES */
 .falling-roses {
    position: absolute !important;
    z-index: 5;
@@ -262,4 +262,5 @@
    width: 180px !important;
    height: 450px !important;
    object-fit: cover;
+   animation-duration: 15s !important;
 }
