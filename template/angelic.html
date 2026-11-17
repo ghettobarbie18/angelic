@@ -111,7 +111,8 @@
 
 .angelic-textbox {
     position: relative;
-
+    overflow-y: auto !important;
+    border-left: none !important;
     width: 100%;
     height: 100%;
 
@@ -125,7 +126,6 @@
     line-height: 1.7;
 
     text-align: justify;
-    overflow-y: auto;
 }
 
 .angelic-textbox::before {
@@ -284,7 +284,7 @@
    background: linear-gradient(
         135deg,
         #E74646,
-        #FA9884
+        #FA9884,
         #FFE5CA
     );
     -webkit-background-clip: text;
