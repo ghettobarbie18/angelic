@@ -85,7 +85,7 @@
 .angelic-content {
     position: absolute;
     top: 35px;
-    left: 80px;
+    left: 72px;
 
     width: 410px;
     height: 520px;
@@ -106,14 +106,7 @@
 
     padding: 20px;
     box-sizing: border-box;
-    border-left: 5px solid transparent !important;
-    border-image: linear-gradient(
-        to bottom,
-        #F5EFEF,
-        #E97171,
-        #931A25,
-        #F5EFEF
-    ) 1 !important;
+   
     color: black;
     text-shadow: 1px 1px 1px #E97171;
     font-family: Georgia, serif;
@@ -122,6 +115,24 @@
 
     text-align: justify;
     overflow-y: auto;
+}
+
+.angelic-textbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        #F5EFEF 15%,
+        #E97171 50%,
+        #931A25 85%,
+        transparent 100%
+    );
+    pointer-events: none;
 }
 
 /* HIDDEN SCROLLBAR */
