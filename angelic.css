@@ -56,6 +56,39 @@
     }
 }
 
+/* FLOATING IMAGE */
+.angelic-image .floating-image {
+    width: 200px !important;
+    height: 250px !important;
+    position: absolute !important;
+    top: 5px !important;
+    right: 30px !important;
+    object-fit: cover;
+    z-index: 9999 !important;
+    pointer-events: auto;
+    animation: angelic-float 8s ease-in-out infinite;
+    transition: filter .4s ease;
+}
+
+/* FLOATING IMAGE GLOW ON HOVER */
+.angelic-image .floating-image:hover {
+    filter:
+        drop-shadow(0 0 5px #FF9FC7)
+        drop-shadow(0 0 10px #FFE7F0)
+        drop-shadow(0 0 20px #F4BAA3);
+}
+
+/* FLOATING ANIMATION */
+@keyframes angelic-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 /* TITLE */
 .title {
     position: absolute !important;
@@ -101,65 +134,4 @@
     display: inline-block;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-}
-
-/* CONTENT LAYER */
-.angelic-content {
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    width: 300px;
-    height: 500px;
-    z-index: 5;
-    box-sizing: border-box;
-}
-
-/* TEXT BOX */
-.angelic-textbox {
-    position: relative;
-    width: 300px;
-    height: 500px;
-    padding: 20px;
-    box-sizing: border-box;
-    color: black;
-    font-family: Georgia, serif;
-    font-size: 13px;
-    line-height: 1.7;
-    overflow-y: auto;
-    text-align: justify;
-}
-
-/* FLOATING IMAGE */
-.angelic-content .floating-image {
-    float: right;
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    top: 5px;
-    right: 20px;
-    
-    /* TEXT WRAPS AROUND IMAGE */
-    shape-outside: ellipse(48% 50% at 50% 50%);
-    shape-margin: 12px;
-    animation: angelic-float 8s ease-in-out infinite;
-    transition: filter .4s ease;
-}
-
-/* IMAGE GLOW */
-.angelic-content .floating-image:hover {
-    filter:
-        drop-shadow(0 0 5px #FF9FC7)
-        drop-shadow(0 0 10px #FFE7F0)
-        drop-shadow(0 0 20px #F4BAA3);
-}
-
-/* FLOATING ANIMATION */
-@keyframes angelic-float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
 }
