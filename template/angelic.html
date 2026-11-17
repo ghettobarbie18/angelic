@@ -117,7 +117,14 @@
 
     padding: 20px;
     box-sizing: border-box;
-
+    border-left: 5px solid transparent !important;
+    border-image: linear-gradient(
+        to bottom,
+        #F5EFEF,
+        #E97171,
+        #931A25,
+        #F5EFEF
+    ) 1 !important;
     color: black;
     text-shadow: 1px 1px 1px #E97171;
     font-family: Georgia, serif;
@@ -126,6 +133,17 @@
 
     text-align: justify;
     overflow-y: auto;
+}
+
+/* HIDDEN SCROLLBAR */
+.angelic-textbox {
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer */
+}
+
+.angelic-textbox::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 /* =================================
