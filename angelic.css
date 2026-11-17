@@ -98,9 +98,9 @@
     font-family: "Qwigley", cursive !important;
     font-weight: 400;
     font-style: bold;
-    font-size: 70px !important;
+    font-size: 50px !important;
     text-transform: uppercase;
-    text-shadow: 8x 8px 4px #F31559;
+    text-shadow: 2px 2px 2px #F31559;
     letter-spacing: -5x;
     background: linear-gradient(
         135deg,
@@ -128,7 +128,7 @@
     font-style: bold;
     font-size: 40px !important;
     text-shadow: 2px 2px 5px #E97171;
-    letter-spacing: 4x;
+    letter-spacing: 4px;
     color: #931A25;
     display: inline-block;
     writing-mode: vertical-rl;
