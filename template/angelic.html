@@ -112,13 +112,13 @@
 .angelic-textbox {
     position: relative;
     overflow-y: auto !important;
-    border-left: none !important;
+    border: none !important;
     width: 100%;
     height: 100%;
 
     padding: 20px;
     box-sizing: border-box;
-    
+
     color: black;
     text-shadow: 1px 1px 1px #E97171;
     font-family: Georgia, serif;
@@ -126,15 +126,28 @@
     line-height: 1.7;
 
     text-align: justify;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.angelic-textbox::before {
+/* HIDE SCROLLBAR */
+.angelic-textbox::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+}
+
+/* STATIONARY GRADIENT BORDER */
+.angelic-content::before {
     content: "";
-    position: absolute;
+    position: absolute !important;
+
     top: 95px;
     left: 0;
+
     width: 2px;
     height: 350px;
+
     background: linear-gradient(
         to bottom,
         transparent 0%,
@@ -143,18 +156,9 @@
         #F5EFEF 85%,
         transparent 100%
     );
+
+    z-index: 20;
     pointer-events: none;
-}
-
-/* HIDDEN SCROLLBAR */
-.angelic-textbox {
-    overflow-y: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer */
-}
-
-.angelic-textbox::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
 }
 
 /* =================================
@@ -276,21 +280,29 @@
    animation-duration: 8s !important; 
 }
 
-/* SPEECH */
+/* =================================
+   SPEECH
+================================= */
+
 .speech-text {
-   font-family: "Satisfy", cursive;
-   font-weight: 400;
-   font-style: normal;
-   background: linear-gradient(
+    display: inline-block;
+    font-family: "Satisfy", cursive !important;
+    font-weight: 400;
+    font-style: normal;
+
+    background: linear-gradient(
         135deg,
         #E74646,
         #FA9884,
         #FFE5CA
     );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-   text-shadow: 1px 1px 1px #E97171;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+
+    text-shadow: none !important;
 }
 </style>
 </head>
